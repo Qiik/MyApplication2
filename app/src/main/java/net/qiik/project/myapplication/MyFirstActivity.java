@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 /**
  * Created by NotePad1 on 15.08.2016.
@@ -28,6 +30,9 @@ public class MyFirstActivity extends AppCompatActivity implements CompoundButton
         checkBox1.setOnCheckedChangeListener(this);
 
         findViewById(R.id.button).setOnClickListener(this);
+
+        TextView textView = (TextView) findViewById(R.id.textView);
+        EditText editText = (EditText) findViewById(R.id.editText2);
     }
 
     @Override
